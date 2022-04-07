@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { MaterialModule } from './material.module';
+// import { ParticlesModule } from 'angular-particle-updated';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { MaterialModule } from './material.module';
     RoundProgressModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    // ParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
