@@ -1,11 +1,17 @@
 <!-- <h1>Hi There!</h1> -->
 
 <main class="content">
-  
-  <button mat-button color="primary">Refresh</button>
-  <button mat-button color="accent">Accent</button>
-  <h1>Meditation App</h1>
-  <div>
+  <!-- <div class="container"> 
+    <mat-toolbar class="mat-elevation-z6" color="basic">
+      <button mat-raised-button color="basic">Refresh</button>
+    </mat-toolbar>
+  </div> -->
+
+  <div >
+    <h1>Meditation App</h1>
+  </div>
+
+  <div >
     <div class="progress-wrapper" *ngIf="maxVal">
       <div class="text" *ngIf="!isFinished">
         {{ max - current | number: "1.1-1" }}
@@ -25,7 +31,6 @@
         [animation]="'easeInOutQuart'"
         [responsive]="true"
       >
-        
       </round-progress>
     </div>
 
@@ -41,15 +46,8 @@
         />
       </div>
     </div>
-    <button
-          class="button is-info"
-          *ngIf="currentVal <= 0"
-          (click)="start()"
-        >
-          Start
-        </button>
-        <button class="button is-danger" *ngIf="!isFinished" (click)="finish()">
-          Finish
-        </button>
+    
+    <button mat-raised-button color="primary" *ngIf="currentVal <= 0" (click)="start()" class="button is-info">Start</button>
+    <button mat-raised-button color="basic" *ngIf="!isFinished" (click)="finish()" class="button is-danger">Finish</button>
   </div>
 </main>
