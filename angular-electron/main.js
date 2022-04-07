@@ -7,7 +7,7 @@ function createWindow () {
   const path = require("path");
     win = new BrowserWindow({
           width:600,
-          height: 600,
+          height: 800,
           backgroundColor: '#fffff',
           icon: `${__dirname}\\dist\\assets\\logo.png`
       })

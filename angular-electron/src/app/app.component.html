@@ -1,6 +1,9 @@
 <!-- <h1>Hi There!</h1> -->
 
 <main class="content">
+  
+  <button mat-button color="primary">Refresh</button>
+  <button mat-button color="accent">Accent</button>
   <h1>Meditation App</h1>
   <div>
     <div class="progress-wrapper" *ngIf="maxVal">
@@ -16,10 +19,11 @@
       <round-progress
         [max]="maxVal"
         [current]="currentVal"
-        [radius]="150"
-        [stroke]="10"
+        [radius]="50"
+        [stroke]="5"
         [background]="'#eaeaea'"
         [animation]="'easeInOutQuart'"
+        [responsive]="true"
       >
         
       </round-progress>
